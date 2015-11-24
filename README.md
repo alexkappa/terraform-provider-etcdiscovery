@@ -7,10 +7,6 @@ Terraform provider for the etcd discovery service.
 Use the discovery service to create a new token for your etcd cluster.
 
 ```
-provider "etcd" {
-  endpoints = ["http://localhost:2379", "http://localhost:4001"]
-}
-
 resource "etcd_discovery" "token" {
   size = 3
 }
